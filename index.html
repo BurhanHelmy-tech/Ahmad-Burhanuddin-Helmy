@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cikgu Ahmad Burhanuddin | Matematik & Teknologi</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        
+        /* Corak Latar Belakang Matematik */
+        .math-bg {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 25px 25px;
+        }
+
+        /* Animasi Gambar (Blob Effect) */
+        .blob-img {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: morph 8s ease-in-out infinite;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+            transition: all 0.5s;
+        }
+        
+        @keyframes morph {
+            0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+            100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        }
+    </style>
+</head>
+<body class="text-slate-800 bg-slate-50">
+
+    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700 flex items-center gap-2">
+                <i class="fas fa-graduation-cap"></i> Cikgu<span class="text-slate-900">Burhanuddin</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 font-medium items-center">
+                <a href="#home" class="hover:text-blue-600 transition">Utama</a>
+                <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Pengalaman</a>
+                <a href="#tool" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition shadow-lg transform hover:scale-105">
+                    <i class="fas fa-calculator mr-2"></i>Sudut Pelajar
+                </a>
+            </div>
+
+            <button onclick="toggleMenu()" class="md:hidden text-2xl text-blue-700 focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 flex flex-col space-y-3 shadow-lg">
+            <a href="#home" class="block py-2 text-slate-700 font-semibold">Utama</a>
+            <a href="#about" class="block py-2 text-slate-700 font-semibold">Tentang</a>
+            <a href="#experience" class="block py-2 text-slate-700 font-semibold">Pengalaman</a>
+            <a href="#tool" class="block py-2 text-blue-600 font-bold">Sudut Pelajar</a>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-36 pb-20 math-bg min-h-screen flex items-center">
+        <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-10">
+            <div class="md:w-1/2 text-center md:text-left">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-800 text-sm font-bold mb-4 shadow-sm">
+                    Guru Matematik, Bahasa Melayu
+                </span>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-slate-900">
+                    Membina Minda <br><span class="text-blue-600">Analitis & Kreatif</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Saya <strong>Ahmad Burhanuddin Helmy</strong>. Seorang pendidik yang komited, menepati masa, dan berdedikasi untuk menerapkan teknologi dalam pembelajaran Abad ke-21.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="px-8 py-4 bg-slate-900 text-white rounded-xl shadow-lg hover:bg-slate-800 transition font-semibold flex items-center justify-center gap-2">
+                        <i class="fas fa-paper-plane"></i> Hubungi Saya
+                    </a>
+                    <a href="#tool" class="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 rounded-xl hover:border-blue-500 hover:text-blue-600 transition font-semibold flex items-center justify-center gap-2">
+                        <i class="fas fa-play"></i> Cuba Alat Matematik
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center relative">
+                <div class="absolute top-0 right-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-pulse"></div>
+                <div class="absolute bottom-0 left-10 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-pulse" style="animation-delay: 2s"></div>
+                
+                <div class="w-72 h-72 md:w-96 md:h-96 relative overflow-hidden blob-img border-4 border-white bg-white">
+                    <img src="Gambar Passport (1).jpeg" alt="Ahmad Burhanuddin" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800">Profil Profesional</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-2 rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-slate-50 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition group">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tentang Saya</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Seorang yang komited memastikan setiap kerja dilakukan dalam keadaan terbaik. Graduan Kewangan Islam yang kini fokus dalam pendidikan.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-slate-50 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition group">
+                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Kepakaran Subjek</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border rounded-lg text-xs font-bold text-slate-600 shadow-sm">Matematik</span>
+                        <span class="px-3 py-1 bg-white border rounded-lg text-xs font-bold text-slate-600 shadow-sm">Math Tambahan</span>
+                        <span class="px-3 py-1 bg-white border rounded-lg text-xs font-bold text-slate-600 shadow-sm">Asas Sains Komputer</span>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-slate-50 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition group">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Kemahiran</h3>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Pengajaran Abad ke-21</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Mahir Teknologi (ICT)</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Kawalan Kelas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tool" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <i class="fas fa-square-root-alt absolute top-10 left-20 text-6xl"></i>
+            <i class="fas fa-calculator absolute bottom-20 right-20 text-6xl"></i>
+            <i class="fas fa-shapes absolute top-1/2 left-10 text-8xl"></i>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-10">
+                <span class="text-yellow-400 font-bold tracking-wider text-sm uppercase mb-2 block">Demo Pengajaran Interaktif</span>
+                <h2 class="text-3xl md:text-5xl font-bold">Penyelesai Persamaan Kuadratik</h2>
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                    Masukkan nilai <b>a, b,</b> dan <b>c</b> untuk mencari punca persamaan. Alat ini membantu pelajar menyemak jawapan dengan pantas.
+                </p>
+                <div class="mt-6 inline-block bg-slate-800 px-6 py-2 rounded-lg border border-slate-700 font-mono text-lg text-blue-300">
+                    ax² + bx + c = 0
+                </div>
+            </div>
+
+            <div class="max-w-xl mx-auto bg-slate-800 p-8 rounded-2xl shadow-2xl border border-slate-700">
+                <div class="grid grid-cols-3 gap-4 mb-8">
+                    <div>
+                        <label class="block text-xs text-slate-400 mb-2 font-bold text-center">Nilai a</label>
+                        <input type="number" id="val_a" placeholder="1" class="w-full bg-slate-700 text-white text-center text-xl p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition border border-slate-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-400 mb-2 font-bold text-center">Nilai b</label>
+                        <input type="number" id="val_b" placeholder="5" class="w-full bg-slate-700 text-white text-center text-xl p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition border border-slate-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-400 mb-2 font-bold text-center">Nilai c</label>
+                        <input type="number" id="val_c" placeholder="6" class="w-full bg-slate-700 text-white text-center text-xl p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition border border-slate-600">
+                    </div>
+                </div>
+
+                <button onclick="calculateQuadratic()" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl shadow-lg transition transform active:scale-95 flex justify-center items-center gap-2">
+                    <i class="fas fa-magic"></i> Kira Jawapan
+                </button>
+
+                <div id="result-box" class="mt-8 hidden bg-slate-900 rounded-xl p-6 border border-slate-600 animate-fade-in">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-xs text-slate-500 uppercase font-bold tracking-widest">Keputusan</span>
+                        <span class="text-xs text-slate-400 font-mono">Diskriminan: <span id="disc-val" class="text-white font-bold"></span></span>
+                    </div>
+                    
+                    <div class="flex justify-between items-center bg-slate-800 rounded-lg p-4">
+                        <div class="text-center w-1/2 border-r border-slate-600">
+                            <span class="text-xs text-slate-400">Punca x₁</span>
+                            <div id="root1" class="text-3xl font-bold text-green-400 mt-1">-</div>
+                        </div>
+                        <div class="text-center w-1/2">
+                            <span class="text-xs text-slate-400">Punca x₂</span>
+                            <div id="root2" class="text-3xl font-bold text-green-400 mt-1">-</div>
+                        </div>
+                    </div>
+                    <p id="msg" class="text-center text-sm text-yellow-500 mt-4 italic"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-slate-800">Latar Belakang</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-blue-700">
+                        <i class="fas fa-university"></i> Pendidikan
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-500 hover:shadow-md transition">
+                            <span class="text-xs font-bold text-slate-400">2023 - 2024</span>
+                            <h4 class="font-bold text-lg mt-1 text-slate-800">Diploma Pascasiswazah Pendidikan</h4>
+                            <p class="text-sm text-slate-600">Universiti Sultan Zainal Abidin (UniSZA)</p>
+                            <div class="mt-3 inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">PNGK: 3.28</div>
+                            <p class="text-xs text-slate-500 mt-2 italic">Matematik & Teknologi Maklumat</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-500 hover:shadow-md transition">
+                            <span class="text-xs font-bold text-slate-400">2016 - 2020</span>
+                            <h4 class="font-bold text-lg mt-1 text-slate-800">Degree in Islamic Finance</h4>
+                            <p class="text-sm text-slate-600">University College Bestari</p>
+                            <div class="mt-3 inline-block bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">PNGK: 3.60</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-green-700">
+                        <i class="fas fa-briefcase"></i> Pengalaman Mengajar
+                    </h3>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-green-500 hover:shadow-md transition">
+                        <span class="text-xs font-bold text-slate-400">Ogos 2024 - Okt 2024</span>
+                        <h4 class="font-bold text-lg mt-1 text-slate-800">Guru Praktikal</h4>
+                        <p class="text-sm text-slate-600 mb-4 font-semibold">SMK Belara</p>
+                        <ul class="text-sm text-slate-600 space-y-3">
+                            <li class="flex items-start gap-2"><i class="fas fa-caret-right text-green-500 mt-1"></i> Mengajar Matematik & Asas Sains Komputer (Ting. 1 & 2).</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-caret-right text-green-500 mt-1"></i> Menyediakan RPH (18 masa seminggu).</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-caret-right text-green-500 mt-1"></i> Membantu pengurusan program sekolah.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-white border-t border-slate-200 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-8 text-slate-800">Hubungi Saya</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
+                <a href="tel:0199750734" class="flex items-center justify-center gap-3 px-8 py-4 bg-slate-50 rounded-xl border border-slate-200 hover:border-blue-500 hover:text-blue-600 hover:shadow-lg transition group">
+                    <i class="fas fa-phone-alt text-slate-400 group-hover:text-blue-600 text-xl"></i>
+                    <div class="text-left">
+                        <span class="block text-xs text-slate-500 uppercase font-bold">Telefon</span>
+                        <span class="font-bold text-lg">019-9750734</span>
+                    </div>
+                </a>
+                <a href="mailto:buhanhelmy44@gmail.com" class="flex items-center justify-center gap-3 px-8 py-4 bg-slate-50 rounded-xl border border-slate-200 hover:border-red-500 hover:text-red-600 hover:shadow-lg transition group">
+                    <i class="fas fa-envelope text-slate-400 group-hover:text-red-600 text-xl"></i>
+                    <div class="text-left">
+                        <span class="block text-xs text-slate-500 uppercase font-bold">Emel</span>
+                        <span class="font-bold text-lg">buhanhelmy44@gmail.com</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="text-slate-500 text-sm border-t pt-8 border-slate-100 max-w-2xl mx-auto">
+                <p class="mb-2"><strong>Rujukan Akademik:</strong><br> Dr. Wan Omar Ali Saifuddin Bin Wan Ismail (Pensyarah UniSZA) - 012-9492895</p>
+                <p class="mt-4">&copy; 2025 Ahmad Burhanuddin Helmy. Hak Cipta Terpelihara.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fungsi Toggle Menu Mobile
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Fungsi Kalkulator Kuadratik
+        function calculateQuadratic() {
+            const a = parseFloat(document.getElementById('val_a').value);
+            const b = parseFloat(document.getElementById('val_b').value);
+            const c = parseFloat(document.getElementById('val_c').value);
+            
+            const resultBox = document.getElementById('result-box');
+            const root1 = document.getElementById('root1');
+            const root2 = document.getElementById('root2');
+            const discVal = document.getElementById('disc-val');
+            const msg = document.getElementById('msg');
+
+            // Validasi Input
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                alert("Sila masukkan nombor untuk a, b, dan c.");
+                return;
+            }
+
+            resultBox.classList.remove('hidden');
+
+            // Rumus Diskriminan: b^2 - 4ac
+            const discriminant = (b * b) - (4 * a * c);
+            discVal.innerText = discriminant;
+
+            if (discriminant > 0) {
+                let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+                let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+                root1.innerText = x1.toFixed(2);
+                root2.innerText = x2.toFixed(2);
+                msg.innerText = "Terdapat dua punca nyata yang berbeza.";
+            } else if (discriminant === 0) {
+                let x = -b / (2 * a);
+                root1.innerText = x.toFixed(2);
+                root2.innerText = x.toFixed(2);
+                msg.innerText = "Terdapat satu punca nyata sahaja (Punca sama).";
+            } else {
+                root1.innerText = "Tiada";
+                root2.innerText = "Tiada";
+                msg.innerText = "Tiada punca nyata (Nombor Kompleks).";
+            }
+        }
+    </script>
+</body>
+</html>
